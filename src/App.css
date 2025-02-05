@@ -10,9 +10,9 @@ body {
 }
 
 .App {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   width: 100%;
   box-sizing: border-box; /* Ensures padding doesn’t shrink width */
 }
@@ -52,6 +52,7 @@ section h2 {
 }
 
 .section-container {
+  margin: 1rem 1rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
