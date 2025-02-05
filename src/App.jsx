@@ -70,8 +70,7 @@ function App() {
           className="profile-photo"
         />
         <p>
-          About me text.
-        </p>
+        I am a passionate Business Analytics professional with experience in data analysis, finance, and technology. I am dedicated to learning and applying the latest tools and techniques in my projects. My background includes working on projects related to consumer behavior analysis and financial risk prediction.        </p>
       </section>
 
       <section>
