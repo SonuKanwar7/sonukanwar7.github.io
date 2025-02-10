@@ -5,11 +5,7 @@ const getImageUrl = (imageName) => {
   return new URL(`./assets/${imageName}`, import.meta.url).href;
 };
 
-const ProjectCard = ({ project }) => {
-  const handleClick = () => {
-    window.open(`https://github.com/sonukanwar7/${project.repo}`, '_blank');
-  };
-
+const ProjectCard = React.memo(({ project }) => {
   return (
     <div className="project-card">
       <img src={getImageUrl(project.image)} alt={`${project.title} logo`} className="project-img" />
@@ -21,10 +17,10 @@ const ProjectCard = ({ project }) => {
             <span key={index} className="tag">{tool}</span>
           ))}
         </div>
-        <button className="btn" onClick={handleClick}>View Project</button>
+        <button className="btn" onClick={() => window.open(project.link, '_blank', 'noopener,noreferrer')}>{project.buttonText}</button>
       </div>
     </div>
   );
-};
+});
 
 export default ProjectCard;
