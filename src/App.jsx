@@ -1,36 +1,34 @@
 import { useState } from 'react'
 import './App.css'
 import ProjectCard from './ProjectCard'
-import projectImage from './assets/project-image.jpg'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-const self_link = "https://github.com/sonukanwar7/"
-
+// TODO (Sonu): for now add placeholder projects
 const stakeholderProjects = [
   {
-    title: "Project 1 title",
-    image: projectImage,
+    title: "Placeholder Project 1 title",
+    image: "project-image.jpg",
     tags: ['R', 'SAS'],
-    repo: self_link + "Project1",
+    repo: "Project1",
   },
 
   {
-    title: "Project 2 title",
-    image: projectImage,
+    title: "Placeholder Project 2 title",
+    image: "project-image.jpg",
     tags: ['Python', 'SQL'],
-    repo: self_link + "Project2",
+    repo: "Project2",
   }
 ]
 
 const personalProjects = [
   {
     title: "Portfolio Website",
-    image: projectImage,
+    image: "react_project.png",
     tags: ['Javascript', 'React'],
-    repo: self_link + "sonukanwar7.github.io",
+    repo: "sonukanwar7.github.io",
   }
 ];
 
@@ -53,7 +51,7 @@ function App() {
 
   const filteredStakeholderProjects = filterProjects(stakeholderProjects);
   const filteredPersonalProjects = filterProjects(personalProjects);
-
+  const profilePicImgURL = "https://github.com/sonukanwar7.png";
 
   return (
     <div className='App'>
@@ -65,8 +63,8 @@ function App() {
 
       <section className="about-me">
         <img
-          src="https://github.com/sonukanwar7.png"
-          alt="Profile"
+          src= {profilePicImgURL}
+          alt="Profile Pic"
           className="profile-photo"
         />
         <p>

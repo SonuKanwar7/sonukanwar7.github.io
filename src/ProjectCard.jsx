@@ -1,14 +1,18 @@
 import React from 'react';
 import './ProjectCard.css';
 
+const getImageUrl = (imageName) => {
+  return new URL(`./assets/${imageName}`, import.meta.url).href;
+};
+
 const ProjectCard = ({ project }) => {
   const handleClick = () => {
-    window.open(project.link, '_blank');
+    window.open(`https://github.com/sonukanwar7/${project.link}`, '_blank');
   };
 
   return (
     <div className="project-card">
-      <img src={project.image} alt={`${project.title} logo`} className="project-img" />
+      <img src={getImageUrl(project.image)} alt={`${project.title} logo`} className="project-img" />
       <div className="project-content">
         <h3>{project.title}</h3>
         <div className="tags">
