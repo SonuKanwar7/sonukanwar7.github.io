@@ -7,16 +7,8 @@ const stakeholderProjects = [
   {
     title: "Placeholder Project 1",
     image: "project-image.jpg",
-    description: "A data analysis project utilizing R and SAS to uncover insights from financial datasets.",
+    description: "Placeholder description.",
     tools: ['R', 'SAS'],
-    link: "",
-    buttonText: "View Details",
-  },
-  {
-    title: "Placeholder Project 2",
-    image: "project-image.jpg",
-    description: "A Python and SQL-based dashboard for monitoring operational efficiency in banking transactions.",
-    tools: ['Python', 'SQL'],
     link: "",
     buttonText: "View Details",
   }
@@ -29,6 +21,14 @@ const personalProjects = [
     description: "A dynamic, responsive portfolio website developed with React and JavaScript to showcase my projects and optimized for performance.",
     tools: ['Javascript', 'React'],
     link: "https://github.com/sonukanwar7/sonukanwar7.github.io",
+    buttonText: "View on GitHub",
+  },
+  {
+    title: "Bitcoin Trading Strategy",
+    image: "bitcoin_image.jpg",
+    description: "Analyzing Bitcoin trading strategies with indicators, ML, and risk management.",
+    tools: ['Python'],
+    link: "https://github.com/SonuKanwar7/bitcoin_trading_strategy",
     buttonText: "View on GitHub",
   }
 ];
