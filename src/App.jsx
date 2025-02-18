@@ -24,11 +24,11 @@ const personalProjects = [
     buttonText: "View on GitHub",
   },
   {
-    title: "Bitcoin Trading Strategy",
-    image: "bitcoin_image.jpg",
-    description: "Analyzing Bitcoin trading strategies with indicators, ML, and risk management.",
+    title: "Credut Risk Analysis & Prediction",
+    image: "credit_risk.jpg",
+    description: "Predict credit risk using borrower data and financial indicators.",
     tools: ['Python'],
-    link: "https://github.com/SonuKanwar7/bitcoin_trading_strategy",
+    link: "https://github.com/SonuKanwar7/credit_risk_analysis",
     buttonText: "View on GitHub",
   }
 ];
