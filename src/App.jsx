@@ -4,14 +4,14 @@ import ProjectCard from './ProjectCard';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 const stakeholderProjects = [
-  {
-    title: "Placeholder Project 1",
-    image: "project-image.jpg",
-    description: "Placeholder description.",
-    tools: ['R', 'SAS'],
-    link: "",
-    buttonText: "View Details",
-  }
+  // {
+  //   title: "Placeholder Project 1",
+  //   image: "project-image.jpg",
+  //   description: "Placeholder description.",
+  //   tools: ['R', 'SAS'],
+  //   link: "",
+  //   buttonText: "View Details",
+  // }
 ];
 
 const personalProjects = [
@@ -23,14 +23,6 @@ const personalProjects = [
     link: "https://github.com/sonukanwar7/sonukanwar7.github.io",
     buttonText: "View on GitHub",
   },
-  {
-    title: "Credut Risk Analysis & Prediction",
-    image: "credit_risk.jpg",
-    description: "Predict credit risk using borrower data and financial indicators.",
-    tools: ['Python'],
-    link: "https://github.com/SonuKanwar7/credit_risk_analysis",
-    buttonText: "View on GitHub",
-  }
 ];
 
 function App() {
@@ -51,14 +43,16 @@ function App() {
         </p>
       </section>
 
-      <section>
-        <h2>Stakeholder Projects</h2>
-        <div className="section-container">
-          {stakeholderProjects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
-        </div>
-      </section>
+      {stakeholderProjects.length > 0 && (
+        <section>
+          <h2>Stakeholder Projects</h2>
+          <div className="section-container">
+            {stakeholderProjects.map((project, index) => (
+              <ProjectCard key={index} project={project} />
+            ))}
+          </div>
+        </section>
+      )}
       
       <section>
         <h2>Personal Projects</h2>
